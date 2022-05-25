@@ -11,7 +11,7 @@ module.exports = function createTextGeometry (opt) {
   return new TextGeometry(opt)
 }
 
-class TextGeometry extends Base (opt) {
+class TextGeometry extends Base {
   constructor(opt){
     super();
 
@@ -28,7 +28,7 @@ class TextGeometry extends Base (opt) {
 
   }
 
-  update(opts){
+  update(opt){
     if (typeof opt === 'string') {
       opt = { text: opt }
     }
